@@ -15,17 +15,5 @@ The application is required to implement the following functionalities:
 3. **Date Filtering**: Allow users to search and filter the data to view the forecast for a specific day across all cities using a date picker or similar mechanism.  
 4. **Temperature Unit Toggle**: Provide a toggle switch to allow the user to instantly switch the displayed temperature unit between Celsius (°C) and Fahrenheit (°F).  
 
----
 
-## Local API Setup
-A local Node.js REST API is provided in the `./src` directory to serve the required weather data.
 
-### Requirements
-The API was created using Node.js v10.6.0. While other versions may work, this version is officially supported.
-
-### Installation (API)
-Navigate to the API source directory and install the dependencies:
-
-```bash
-cd ./src
-npm ci
