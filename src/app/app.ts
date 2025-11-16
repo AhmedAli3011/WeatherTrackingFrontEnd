@@ -1,5 +1,4 @@
 import { Component, signal, OnInit, inject } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
 import { WeatherDataService } from './Services/weather-data-service';
 import { Toggle } from './Components/toggle/toggle';
 import { Display } from './Components/display/display';
@@ -8,7 +7,7 @@ import { DatePicker } from './Components/datePicker/datePicker';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Toggle, Display, Search, DatePicker],
+  imports: [Toggle, Display, Search, DatePicker],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

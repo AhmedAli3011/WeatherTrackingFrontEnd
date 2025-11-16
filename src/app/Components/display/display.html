@@ -1,7 +1,7 @@
 <div class="display-cards">
   @for (entry of forecastMap | keyvalue; track entry.key) {
     <div class="city-block">
-      <h3>{{ cityNameMap.get(entry.key) || 'Unknown City' }}</h3>
+      <h3>{{ idToCityNameMap.get(entry.key) || 'Unknown City' }}</h3>
       <ul>
         @for (forecast of entry.value; track forecast.date) {
         <li>

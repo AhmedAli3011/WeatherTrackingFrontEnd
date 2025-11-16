@@ -3,18 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Weather App</title>
+  <title>Weather Forecast App</title>
 </head>
 <body>
   <div id="app" class="app-container">
     <div class="app-inner-container">
-      <h1 class="app-title">Weather App</h1>
+      <h1 class="app-title">Weather Forecast App</h1>
       <div class="app-controls">
         <app-search [idToCityNameMap]="idToCityNameMap()" (citySelected)="onCitySelected($event)"></app-search>
         <app-toggle (isFahrenheitChange)="onToggleUnit($event)"></app-toggle>
         <app-date [latestDate]="latestDate()" (dateSelected)="onDateSelected($event)"></app-date>
       </div>
-      <app-display [forecastMap]="ForecastMap()" [cityNameMap]="idToCityNameMap()" [isFahrenheit]="isFahrenheit()"></app-display>
+      <app-display [forecastMap]="ForecastMap()" [idToCityNameMap]="idToCityNameMap()" [isFahrenheit]="isFahrenheit()"></app-display>
     </div>
   </div>
 </body>

@@ -10,9 +10,7 @@ import { KeyValuePipe } from '@angular/common';
   styleUrl: './display.css',
 })
 export class Display {
-  @Input() forecastMap: Map<number,Forecast[]> = new Map();
-  @Input() cityNameMap: Map<number, string> = new Map();
+  @Input() forecastMap: Map<number, Forecast[]> = new Map();
+  @Input() idToCityNameMap: Map<number, string> = new Map();
   @Input() isFahrenheit: boolean = false;
-
-   
 }
