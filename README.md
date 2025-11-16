@@ -1,59 +1,19 @@
-# WeatherTrackingFrontEnd
+# Weather Forecasts App
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.10.
+## Project Description
+This project involves creating a simple, single-page user interface (UI) component to view and interact with real-time weather forecasts for various cities around the world. The application consumes a local REST API to fetch weather data and presents it in a clean, user-friendly, and responsive manner.  
 
-## Development server
+The primary goal is to demonstrate strong foundational development skills, attention to detail, and best practices in component design and state management.
 
-To start a local development server, run:
+---
 
-```bash
-ng serve
-```
+## Core Features
+The application is required to implement the following functionalities:
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+1. **Latest Forecast List**: Display the weather data for all available cities, showing the forecast for the latest day available in the dataset.  
+2. **City Search**: Allow users to search and filter the weather information for a specific city using a search bar.  
+3. **Date Filtering**: Allow users to search and filter the data to view the forecast for a specific day across all cities using a date picker or similar mechanism.  
+4. **Temperature Unit Toggle**: Provide a toggle switch to allow the user to instantly switch the displayed temperature unit between Celsius (°C) and Fahrenheit (°F).  
 
-## Code scaffolding
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
 
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
