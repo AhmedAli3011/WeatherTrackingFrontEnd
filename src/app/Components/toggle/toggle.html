@@ -1,0 +1,8 @@
+<button class="toggle-switch" (click)="toggleUnit()">
+  <span class="toggle-track">
+    <span class="toggle-thumb" [class.fahrenheit]="isFahrenheit"></span>
+  </span>
+  <span class="toggle-label">
+    {{ isFahrenheit ? 'F°' : 'C°' }}
+  </span>
+</button>

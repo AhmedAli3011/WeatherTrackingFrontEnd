@@ -1,0 +1,4 @@
+<label for="date-picker">Select Date:</label>
+<input id="date-picker" type="date" [value]="selectedDate || latestDate" (change)="onDateChange($event)">
+<button type="button" (click)="onDateChange({ target: { value: latestDate } })">Latest Day</button>
+<button type="button" (click)="onDateChange({ target: { value: 'all' } })">All Dates</button>

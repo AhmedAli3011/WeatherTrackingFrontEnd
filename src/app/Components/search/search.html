@@ -1,0 +1,10 @@
+
+<label for="city-select">Select City:</label>
+<select id="city-select" (change)="onCityChange($event)">
+  <option value="-1">All Cities</option>
+  @for (entry of idToCityNameMap | keyvalue; track entry.key) {
+    <option [value]="entry.key">
+      {{ entry.value }}
+    </option>
+  }
+</select>

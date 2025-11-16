@@ -1,0 +1,15 @@
+<div class="display-cards">
+  @for (entry of forecastMap | keyvalue; track entry.key) {
+    <div class="city-block">
+      <h3>{{ cityNameMap.get(entry.key) || 'Unknown City' }}</h3>
+      <ul>
+        @for (forecast of entry.value; track forecast.date) {
+        <li>
+          Date: {{ forecast.date }} | Temp: {{ isFahrenheit ? forecast.temperatureFahrenheit :
+          forecast.temperatureCelsius }}°{{ isFahrenheit ? 'F' : 'C' }} | Humidity: {{ forecast.humidity }}
+        </li>
+        }
+      </ul>
+    </div>
+  }
+</div>
